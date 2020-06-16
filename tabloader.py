@@ -26,13 +26,13 @@ def main():
                 # Reload current tab
                 keyboard.press_and_release("ctrl+r")
 
+                # Wait for 5 seconds to allow the tab to fully load
+                time.sleep(5)
+
                 # Go to next tab
                 keyboard.press_and_release("ctrl+pagedown")
-
-                # Wait
-                time.sleep(0.5)
         else:
-            # Wait
+            # Wait for 0.1 seconds
             time.sleep(0.1)
 
 
